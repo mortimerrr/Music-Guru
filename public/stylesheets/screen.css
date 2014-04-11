@@ -62,4 +62,8 @@ img {
 
 #submit {
   margin-bottom: 10px;
+  background-color: red;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
 }
