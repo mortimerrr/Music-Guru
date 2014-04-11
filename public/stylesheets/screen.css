@@ -12,6 +12,7 @@ h1 {
 }
 
 img {
+  float: left;
 
 }
 
@@ -50,4 +51,13 @@ img {
 
 #form {
   background-color: white;
+  float: right;
+}
+
+#form h3 {
+  padding-top: 10px;
+}
+
+#submit {
+  margin-bottom: 10px;
 }
