@@ -24,8 +24,8 @@ img {
   margin: 0 auto 2em auto;
   position: relative;
   padding:15px;
-  color:white;
-  background:#f3961c; /* default background for browsers without gradient support */
+  color:black;
+  background:white; /* default background for browsers without gradient support */
   /* css3 */
   /*background:-webkit-gradient(linear, 0 0, 0 100%, from(#f9d835), to(#f3961c));
   background:-moz-linear-gradient(#f9d835, #f3961c);
@@ -43,7 +43,7 @@ img {
   left:50px;
   border-width:15px 15px 0;
   border-style:solid;
-  border-color:#f3961c transparent;
+  border-color:white transparent;
   display:block;
   width:0;
 }

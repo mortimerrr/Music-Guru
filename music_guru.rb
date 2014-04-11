@@ -12,12 +12,12 @@ configure do
     config.api_key = ENV['API_KEY'] || File.read('api.key')
   end
 
-  set :arch, 'Darwin'
+  set :arch, 'Linux-x86_64'
 end
 
 configure :development do
   # Uncomment the line below if you are using Mac OSX
-  # set :arch, 'Darwin'
+  set :arch, 'Darwin'
 end
 
 get '/' do
