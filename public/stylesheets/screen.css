@@ -24,7 +24,7 @@ img {
   margin: 0 auto 2em auto;
   position: relative;
   padding:15px;
-  color:#000;
+  color:white;
   background:#f3961c; /* default background for browsers without gradient support */
   /* css3 */
   /*background:-webkit-gradient(linear, 0 0, 0 100%, from(#f9d835), to(#f3961c));
