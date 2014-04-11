@@ -47,3 +47,7 @@ img {
   display:block;
   width:0;
 }
+
+#form {
+  background-color: white;
+}
