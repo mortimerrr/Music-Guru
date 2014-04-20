@@ -26,8 +26,8 @@ end
 
 post '/tracks' do
   puts params
-  if params[:tc] = 1 
-    flash[:notice] = "You've not checked the box"
+  if params[:tc].to_i != 1 
+    flash[:notice] = "Hey, you've not checked the box!"
   else
     fingerprint = `ENMFP_codegen/codegen.#{settings.arch} #{params[:track][:tempfile].path} 10 20`
     code = JSON.parse(fingerprint).first["code"]
