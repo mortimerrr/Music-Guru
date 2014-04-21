@@ -28,6 +28,8 @@ post '/tracks' do
   puts params
   if params[:tc].to_i != 1 
     flash[:notice] = "Hey, you've not checked the box!"
+  elsif params[:track] == nil
+    flash[:notice] = "Hey, you haven't uploaded a track!"
   else
     fingerprint = `ENMFP_codegen/codegen.#{settings.arch} #{params[:track][:tempfile].path} 10 20`
     code = JSON.parse(fingerprint).first["code"]
@@ -36,7 +38,7 @@ post '/tracks' do
       flash[:notice] = "Er.. you've got me..."
     else
       flash[:notice] = "Was your song #{song.title} by #{song.artist_name}?"
-    end
+    end   
   end
 
   redirect '/'
