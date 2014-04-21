@@ -37,7 +37,7 @@ post '/tracks' do
     if song.nil?
       flash[:notice] = "Er.. you've got me..."
     else
-      flash[:notice] = "Hey #{:name}! Was your song #{song.title} by #{song.artist_name}?"
+      flash[:notice] = "Hey #{params[:thetext]} ! Was your song #{song.title} by #{song.artist_name}?"
     end   
   end
 
